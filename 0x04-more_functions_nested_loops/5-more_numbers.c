@@ -1,12 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
+ * more_numbers - a function that prints 10 times the numbers, from 0 to 14,
+ * followed by a new line.
+ * Return: Always 0
  */
-int main(void)
+void more_numbers(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+	int a, b;
+
+	for (a = 0; a <= 9; a++)
+	{
+		for (b = 0; b <= 14; b++)
+		{
+			if (b > 9)
+				_putchar(b / 10 + '0');
+			_putchar(b % 10 + '0');
+		}
+		_putchar('\n');
+	}
 }
