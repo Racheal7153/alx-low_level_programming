@@ -2,10 +2,12 @@
 void print_integer(int m);
 
 /**
- * print_number - a function that prints an integer.
- * @n: An input integer
- * Return: Nothing
+ * print_number - Prints an integer.
+ * @n: The integer to prints.
+ *
+ * Return: void
  */
+
 void print_number(int n)
 {
 	if (n == 0)
